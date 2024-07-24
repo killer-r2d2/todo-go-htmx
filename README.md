@@ -48,3 +48,10 @@ A big thank you to the creator of the tutorial, which was instrumental in guidin
    go run main.go
    
 4. Open your web browser and go to http://localhost:8080 to see the application in action.   
+
+Usage
+To add a new task, type the task description in the input field and press enter.
+To mark a task as completed, click on the task.
+To delete a task, click on the delete button next to the task.
+Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
