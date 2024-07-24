@@ -9,9 +9,9 @@
 <body>
   <h1>Go HTMX</h1>
   <ul id="todo-list">
-    {{ range .Todos  }} {{block "todo-list-element" .}}
+    {{range .Todos}}
     <li>{{.Message}}</li>
-    {{end}} {{end}}
+    {{end}}
   </ul>
 
   <form hx-swap="beforeend" hx-target="#todo-list" hx-post="/add-todo">
@@ -19,6 +19,10 @@
     <input type="text" id="message" name="message">
     <button type="submit">Create</button>
   </form>
+
+  <template id="todo-list-element">
+    <li>{{.Message}}</li>
+  </template>
   
 </body>
 </html>
